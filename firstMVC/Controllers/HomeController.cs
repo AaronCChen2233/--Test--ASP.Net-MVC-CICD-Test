@@ -16,7 +16,7 @@ namespace firstMVC.Controllers
         public ActionResult About()
         {
             ViewBag.Message = "Your application description page.";
-            ViewData["Name"] = "Aaron Chen";
+            ViewData["Name"] = "Aaron";
 
 
             return View();
