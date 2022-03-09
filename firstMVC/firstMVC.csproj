@@ -127,7 +127,8 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
-    <Compile Include="Controllers\FriendsController.cs" />
+    <Compile Include="Controllers\BestFriendsController.cs" />
+    <Compile Include="Controllers\ChartsController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ProductsController.cs" />
     <Compile Include="Data\FriendContext.cs" />
@@ -135,6 +136,7 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\Friend.cs" />
+    <Compile Include="Models\Location.cs" />
     <Compile Include="Models\Product.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -150,6 +152,8 @@
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
+    <Content Include="Scripts\Chart.js" />
+    <Content Include="Scripts\Chart.min.js" />
     <Content Include="Scripts\jquery-3.4.1.js" />
     <Content Include="Scripts\jquery-3.4.1.min.js" />
     <Content Include="Scripts\jquery-3.4.1.slim.js" />
@@ -175,11 +179,13 @@
     <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Products\Index.cshtml" />
-    <Content Include="Views\Friends\Create.cshtml" />
-    <Content Include="Views\Friends\Delete.cshtml" />
-    <Content Include="Views\Friends\Details.cshtml" />
-    <Content Include="Views\Friends\Edit.cshtml" />
-    <Content Include="Views\Friends\Index.cshtml" />
+    <Content Include="Views\BestFriends\CreateNew.cshtml" />
+    <Content Include="Views\BestFriends\Delete.cshtml" />
+    <Content Include="Views\BestFriends\Details.cshtml" />
+    <Content Include="Views\BestFriends\Edit.cshtml" />
+    <Content Include="Views\BestFriends\Index.cshtml" />
+    <Content Include="Views\Charts\LineTemperature.cshtml" />
+    <Content Include="Views\Charts\LineTemperatureData.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

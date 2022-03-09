@@ -11,7 +11,7 @@ using firstMVC.Models;
 
 namespace firstMVC.Controllers
 {
-    public class FriendsController : Controller
+    public class BestFriendsController : Controller
     {
         private FriendContext db = new FriendContext();
 
@@ -36,18 +36,18 @@ namespace firstMVC.Controllers
             return View(friend);
         }
 
-        // GET: Friends/Create
-        public ActionResult Create()
+        // GET: Friends/CreateNew
+        public ActionResult CreateNew()
         {
             return View();
         }
 
-        // POST: Friends/Create
+        // POST: Friends/CreateNew
         // To protect from overposting attacks, enable the specific properties you want to bind to, for 
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "ID,Name,Phone,Email,City")] Friend friend)
+        public ActionResult CreateNew([Bind(Include = "ID,Name,Phone,Email,City")] Friend friend)
         {
             if (ModelState.IsValid)
             {
